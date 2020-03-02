@@ -1,0 +1,173 @@
+.border {
+    position: absolute;
+    background-color: white;
+    border: #e5a73a 20px solid;
+    width: 383px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: border 1s alternate infinite cubic-bezier(1, 0, 0, 1);
+    overflow: hidden;
+}
+
+.bestseller {
+    color: #6d6e71;
+    font-family: Baskerville;
+    font-size: 10pt;
+    text-align: center;
+    position: absolute;
+    width: 383px;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.author {
+    opacity: 0;
+    color: #6d6e71;
+    font-family: Baskerville;
+    font-size: 16pt;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    animation: author linear 2s forwards;
+    animation-delay: 3s;
+}
+
+.the {
+    color: #e5a73a;
+    font-family: Baskerville;
+    font-size: 24pt;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    color: #e5a73a;
+    font-family: Baskerville;
+    font-size: 48pt;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    transform: translate(-50%, -50%);
+    animation: book_theif linear 2s;
+    animation-delay: 1s;
+}
+
+.quote {
+    color: #6d6e71;
+    font-family: Baskerville;
+    font-size: 10pt;
+    text-align: center;
+    position: absolute;
+    width: 383px;
+    left: 50%;
+    top: 93%;
+    transform: translate(-50%, -50%);
+}
+
+.mag {
+    color: #6d6e71;
+    font-family: Baskerville;
+    font-size: 10pt;
+    text-align: center;
+    font-style: italic;
+    position: absolute;
+    left: 50%;
+    top: 96%;
+    transform: translate(-50%, -50%);
+}
+
+.dancing {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.dancing:hover {
+    animation: dance 1s alternate infinite cubic-bezier(1, 0, 0, 1);
+}
+
+.sticker {
+    position: absolute;
+    left: 10px;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    animation: rotate 9s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes the_move {
+    0% {
+        top: 0%;
+        left: 0%;
+        opacity: 0%;
+    }
+    100% {
+        left: 50%;
+        top: 15%;
+        opacity: 1;
+    }
+}
+
+@keyframes book_theif {
+    0% {
+        top: 0%;
+        left: 50%;
+        opacity: 0;
+    }
+    100% {
+        left: 50%;
+        top: 27%;
+        opacity: 1;
+    }
+}
+
+@keyframes border {
+    0% {
+        border-color: #996c14;
+    }
+    100% {
+        border-color: #f5b23f;
+    }
+}
+
+@keyframes dance {
+    0% {
+        top: 145px;
+    }
+    100% {
+        top: 155px;
+    }
+}
+
+@keyframes author {
+    0% {
+        top: 8%;
+        left: 0%;
+        opacity: 0;
+    }
+    100% {
+        left: 50%;
+        top: 8%;
+        opacity: 1;
+    }
+}
